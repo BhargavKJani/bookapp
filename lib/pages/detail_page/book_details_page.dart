@@ -5,6 +5,7 @@ class BookDetailsPage extends StatelessWidget {
 
   BookDetailsPage({required this.book});
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
