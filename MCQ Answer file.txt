@@ -1,0 +1,49 @@
+Interview:
+
+1. Multiple Choice Question Total Time 10 minutes
+Consider the following code for a Soundboard component in React Native
+Const createSound Item = ({item, index, onPressPlay}) => {
+Return (
+<View>
+<Text>
+{item.name}
+<Button onPress = { () => onPressPlay(item.id)} title ={“play”} />
+</Text>
+</View>
+);
+);
+Const SoundBoard = ({sounds, onPressPlay}) => {
+
+Return (
+<SafeAreaView>
+<FlatList
+Data={sounds}
+renderItem={parameters => createSoundUtem({...parameters,
+
+onPressPlay})}
+
+keyExtractor={item=>item.id}
+/>
+</SafeAreaView>
+);
+
+
+};
+The following array is passed as the sounds prop of the
+SoundBoard component: [ { id: “001”, name: “Glass Break”}]
+What is true about the functionality of the SoundBoard component? Select the answers
+which are true from the given options.
+1. The first item on the list displays the text “001” and a Button with the text “play”.
+2. The FlatList component will work without the SafeAreaView component.
+3. The SoundBoard component would render successfully even if the sounds array was
+empty.
+4. There can be only one object in the sounds array that has “ Glass Break” as the name.
+5. The SoundBoard component will render a horizontal list
+
+
+
+Answer:(3)
+
+
+
+
